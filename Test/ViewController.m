@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "JFTestObject.h"
 
-@interface ViewController ()
+@interface ViewController ()<JFTestObjectProtocol>
+
+@property (nonatomic ,readwrite, strong) NSArray *array;
+@property (nonatomic, readwrite, strong) NSString *string;
+
+@property (nonatomic, strong) NSMutableArray *mutableArray;
 
 @end
 
@@ -16,7 +22,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    NSArray *array = @[ @1, @2, @3, @4 ];
+//    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
+//    
+//    self.array = mutableArray;
+//    [mutableArray removeAllObjects];;
+//    NSLog(@"%@",self.array);
+//    
+//    [mutableArray addObjectsFromArray:array];
+//    self.array = [mutableArray copy];
+//    [mutableArray removeAllObjects];;
+//    NSLog(@"%@",self.array);
+//    
+//    //
+//    NSString *str = @"abcd";
+//    NSMutableString *mutableStr = [str mutableCopy];
+//    
+//    self.string = mutableStr;
+//    [mutableStr appendFormat:@"asdsada"];
+//    NSLog(@"%@",self.string);
+//    
+//    mutableStr = [str mutableCopy];
+//    self.string = [mutableStr copy];
+//    [mutableStr appendFormat:@"asdsada"];
+//    NSLog(@"%@",self.string);
+    
+//    NSMutableArray *array = [NSMutableArray arrayWithObjects:@1,@2,nil];
+//    self.mutableArray = array;
+    
+//    [self.mutableArray removeObjectAtIndex:0];
+    
+//    NSLog(@"%p --- %p",array,_mutableArray);
+//    
+//    JFTestObject *obj = [[JFTestObject alloc] init];
+//    obj.name = @"zhifenx";
 }
 
 
