@@ -15,6 +15,8 @@
     
     NSLog(@"%p",name);
     NSLog(@"%p",_name);
+    
+    NSLog(@"我也也也也是zhifenx");
 }
 
 @end
