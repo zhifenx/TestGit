@@ -15,6 +15,8 @@
     
     NSLog(@"%p",name);
     NSLog(@"%p",_name);
+    
+    NSLog(@"我是zhifenx");
 }
 
 @end
